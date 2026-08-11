@@ -47,8 +47,12 @@ python train.py --model supervised
 # Run the backend
 uvicorn backend.app:app --reload
 
+```
 
 ## ⚠️ Disclaimer
 
 This is a fan-made, educational project not affiliated with or endorsed by Disney. Perry the Platypus is the property of Disney. This project is intended for personal learning purposes.
+
+```
+
 ```
