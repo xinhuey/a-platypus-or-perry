@@ -5,12 +5,12 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center px-6 py-16 sm:py-24">
       <div className="mb-14 max-w-2xl text-center">
         <p className="font-mono text-xs uppercase tracking-[0.35em] text-cyan/70">
-          Specimen Identification Terminal
+          Dr Doof's Mind
         </p>
         <h1 className="mt-4 font-display text-4xl italic leading-tight text-off sm:text-5xl">
-          Ordinary platypus,
+          Perry?
           <br />
-          or something else entirely?
+          Perry the Playpus??
         </h1>
         <p className="mx-auto mt-5 max-w-md font-body text-sm text-off/60">
           Upload a photograph below. The terminal will scan it against known
