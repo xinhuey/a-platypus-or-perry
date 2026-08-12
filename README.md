@@ -28,7 +28,7 @@ The supervised model is the one that actually powers the app; the other two exis
 
 - **Model:** PyTorch (transfer learning from a pretrained CNN, e.g. MobileNetV2 or ResNet18)
 - **Backend:** FastAPI / Flask serving predictions
-- **Frontend:** Next.jd
+- **Frontend:** Next.js
 - **Data handling:** Pillow, NumPy, scikit-learn (for the clustering experiment)
 
 ## 🚀 Getting started
@@ -52,7 +52,3 @@ uvicorn backend.app:app --reload
 ## ⚠️ Disclaimer
 
 This is a fan-made, educational project not affiliated with or endorsed by Disney. Perry the Platypus is the property of Disney. This project is intended for personal learning purposes.
-
-```
-
-```

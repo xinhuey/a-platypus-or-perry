@@ -8,7 +8,7 @@ export default function Home() {
           Dr Doof's Mind
         </p>
         <h1 className="mt-4 font-display text-4xl italic leading-tight text-off sm:text-5xl">
-          Perry?
+          A Platypus?
           <br />
           Perry the Playpus??
         </h1>
