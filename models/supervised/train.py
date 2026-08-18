@@ -80,6 +80,7 @@ def main():
 
     best_val_acc = 0.0
 
+    # Actual training 
     for epoch in range(1, args.epochs + 1):
         train_loss, train_acc = train_one_epoch(model, train_loader, criterion, optimizer, device)
         val_loss, val_acc = evaluate(model, val_loader, criterion, device)
