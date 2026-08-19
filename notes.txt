@@ -1,0 +1,10 @@
+1. Train and validate supervised model 
+    Run `python clean_dataset.py`
+    Run `python dataset.py` to confirm images load correctly
+    Run `python train.py`. 
+    Watch the per-epoch train/val accuracy to check it's actually learning rather than overfitting.
+
+2. Evaluate on the test set
+    Run `python evaluate.py` 
+    to get precision/recall/F1 and a confusion matrix on the held-out test set — this is the honest, final check of how well it actually performs.
+

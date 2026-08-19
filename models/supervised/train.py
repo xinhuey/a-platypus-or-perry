@@ -40,7 +40,7 @@ def train_one_epoch(model, loader, criterion, optimizer, device):
 
         running_loss += loss.item() * images.size(0)
         _, predicted = outputs.max(1)
-        correct += (predicted == labels, sum().item())
+        correct += (predicted == labels).sum().item()
         total += labels.size(0)
 
     return running_loss / total, correct / total 
@@ -65,7 +65,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--epochs", type=int, default=12)
     parser.add_argument("--lr", type=float, default=1e-3)
-    args = parser.parse_arg()
+    args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
@@ -76,7 +76,7 @@ def main():
     criterion = nn.CrossEntropyLoss()
 
     # Only unfrozen params (new head) get optimized initially 
-    optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.paramets()), lr=args.lr)
+    optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=args.lr)
 
     best_val_acc = 0.0
 
