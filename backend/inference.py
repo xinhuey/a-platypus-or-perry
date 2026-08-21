@@ -43,7 +43,7 @@ FIELD_NOTES = {
 
 GIF_MAP = {
     "agent": "/gifs/agent-result.gif",
-    "ordinary": "/gifs/ordinary-playtypus.gif",
+    "ordinary": "/gifs/ordinary-result.gif",
 }
 
 class Classifier:
@@ -77,7 +77,7 @@ class Classifier:
         probabilities = torch.softmax(outputs, dim = 1)[0]
         confidence, predicted_idx = torch.max(probabilities, dim = 0)
 
-        class_name = self.classes[predicted_idx_item()] # perry or platypus
+        class_name = self.classes[predicted_idx.item()] # perry or platypus
         verdict = VERDICT_MAP[class_name]
 
         label = (
