@@ -1,7 +1,7 @@
-import { ClassificationResult } from "@/lib/types";
+import { ClassificationDisplay } from "@/lib/types";
 
 interface SpecimenCardProps{
-    result: ClassificationResult;
+    result: ClassificationDisplay;
 }
 
 export default function SpecimenCard({ result }: SpecimenCardProps){

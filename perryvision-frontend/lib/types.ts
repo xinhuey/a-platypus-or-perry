@@ -5,8 +5,10 @@ export interface ClassificationResult{
     confidence: number; //0-1
     label: string;
     fieldNotes: string;
-    gifSrc: string;
+}
 
+export interface ClassificationDisplay extends ClassificationResult{
+    gifSrc: string;
 }
 
 export type ScanStatus = "idle" | "scanning" | "done" | "error";

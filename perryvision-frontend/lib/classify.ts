@@ -1,4 +1,5 @@
 import { ClassificationResult  } from "./types";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 /**
  * Sends the uploaded image to the backend classifier and returns a verdict.
@@ -29,9 +30,9 @@ export async function classifyImage(
         return{
             verdict: "agent",
             confidence: 0.94,
-            label: "SPECIMEN UNRESOLVED - AGENT SIGNATURE DETECTED",
+            label: "PERRY THE PLATYPUS??!!",
             fieldNotes:
-                "Posture inconsistent with wild specimens. Fedora artifact present in 3 of 4 reference angles. Recommend immediate reclassification.",
+                "A semi-aquatic agent in action",
             gifSrc: "/gifs/agent-result.gif",
         };
     }
@@ -39,9 +40,9 @@ export async function classifyImage(
     return{
         verdict: "ordinary",
             confidence: 0.88,
-            label: "SPECIMEN UNRESOLVED - JUST A PLATYPUS",
+            label: "Relax. He's just a platypus",
             fieldNotes:
-                "Not a secret agent",
+                "They don't do much.",
             gifSrc: "/gifs/ordinary-result.gif",
         };
 }

@@ -4,12 +4,13 @@ import {useState} from "react";
 import UploadPanel from "./UploadPanel";
 import SpecimenCard from "./SpecimenCard";
 import { classifyImage } from "@/lib/classify";
-import { ClassificationResult, ScanStatus } from "@/lib/types";
+import { ClassificationDisplay, ScanStatus } from "@/lib/types";
+import { pickRandomGif } from "@/lib/gif";
 
 export default function ScanScreen(){
     const [status, setStatus] = useState<ScanStatus>("idle");
     const [previewUrl, setPreviewUrl] = useState<string | null>(null);
-    const [result, setResult] = useState<ClassificationResult | null>(null);
+    const [result, setResult] = useState<ClassificationDisplay | null>(null);
 
     async function handleFileSelected(file:File){
         setPreviewUrl(URL.createObjectURL(file));
@@ -18,7 +19,10 @@ export default function ScanScreen(){
 
         try{
             const classification = await classifyImage(file);
-            setResult(classification);
+            setResult({
+              ...classification,
+              gifSrc: pickRandomGif(classification.verdict),
+            });
             setStatus("done");
         }
         catch{
