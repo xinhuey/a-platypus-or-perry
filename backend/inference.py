@@ -34,10 +34,10 @@ VERDICT_MAP = {
 
 FIELD_NOTES = {
     "agent":(
-        "PERRY THE PLATYPUS ??!!??"
+        "A semi-aquatic agent in action"
     ),
     "ordinary":(
-        "Relax, Dr Doof. It's just a platypus."
+        "They don't do much."
     ),
 }
 
@@ -83,7 +83,7 @@ class Classifier:
         label = (
             "PERRY THE PLATYPUS! "
             if verdict == "agent"
-            else "Relax. Just a platypus. They don't do much"
+            else "Relax. Just a platypus."
         )
 
         return {
