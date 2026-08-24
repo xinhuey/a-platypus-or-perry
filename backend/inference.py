@@ -91,7 +91,6 @@ class Classifier:
             "confidence": round(confidence.item(), 4),
             "label": label,
             "fieldNotes" : FIELD_NOTES[verdict],
-            "gifSrc": GIF_MAP[verdict],
         }
 
 # Loaded once when this module is imported 
