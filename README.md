@@ -24,6 +24,8 @@ This repo isn't just a novelty classifier — it's a sandbox for understanding h
 
 The supervised model is the one that actually powers the app; the other two exist for comparison and learning purposes.
 
+Current status: Only supervised model exists, the other two are WIP.
+
 ## 🛠️ Tech stack
 
 - **Model:** PyTorch (transfer learning from a pretrained CNN, e.g. MobileNetV2 or ResNet18)
