@@ -45,7 +45,7 @@ pip install -r requirements.txt
 python train.py --model supervised
 
 # Run the backend
-uvicorn backend.app:app --reload
+python -m uvicorn app:app --reload --port 8000
 
 ```
 
