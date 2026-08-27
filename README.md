@@ -6,15 +6,15 @@ A fine-grained binary image classifier that does what Dr. Doofenshmirtz never co
 
 Built as a hands-on learning project to compare **supervised**, **unsupervised**, and **reinforcement learning** approaches to the exact same classification problem.
 
-## 🎯 User Manual for Dr Doof
+## User Manual for Dr Doofenshmirtz
 
 1. **Upload** a picture.
 2. **Classify** — a trained model predicts whether the image shows Perry the Platypus or just a regular platypus.
 3. **React** — the result is paired with a corresponding GIF that verifies if it is Perry or not!
 
-## 🧠 Why this project exists
+## Purpose
 
-This repo isn't just a novelty classifier — it's a sandbox for understanding how different machine learning paradigms tackle the _same_ problem:
+This repo isn't just a novelty classifier; it's a sandbox for understanding how different machine learning paradigms tackle the _same_ problem:
 
 | Approach                   | Role in this project                                                                                    | What it teaches                                                                             |
 | -------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
@@ -26,14 +26,14 @@ The supervised model is the one that actually powers the app; the other two exis
 
 Current status: Only supervised model exists, the other two are WIP.
 
-## 🛠️ Tech stack
+## Tech stack
 
-- **Model:** PyTorch (transfer learning from a pretrained CNN, e.g. MobileNetV2 or ResNet18)
+- **Model:** PyTorch (transfer learning from a pretrained CNN, ResNet18)
 - **Backend:** FastAPI / Flask serving predictions
 - **Frontend:** Next.js
 - **Data handling:** Pillow, NumPy, scikit-learn (for the clustering experiment)
 
-## 🚀 Getting started
+## Setup
 
 ```bash
 # Clone the repo
