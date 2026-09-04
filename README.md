@@ -9,9 +9,9 @@ Built as a hands-on learning project to compare **supervised**, **unsupervised**
 
 ## User Manual for Dr Doofenshmirtz
 
-1. **Upload** a picture.
-2. **Classify** — a trained model predicts whether the image shows Perry the Platypus or just a regular platypus.
-3. **React** — the result is paired with a corresponding GIF that verifies if it is Perry or not!
+1. **Upload** a picture of the suspect.
+2. **Classify**: a trained model predicts whether the image shows Perry the Platypus or just a regular platypus.
+3. **The Verdict**: the result is paired with a corresponding GIF that verifies if it is Perry or not!
 
 ## Purpose
 
