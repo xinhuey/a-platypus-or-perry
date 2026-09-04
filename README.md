@@ -30,7 +30,7 @@ Current status: Only supervised model exists, the other two are WIP.
 ## Tech stack
 
 - **Model:** PyTorch (transfer learning from a pretrained CNN, ResNet18)
-- **Backend:** FastAPI / Flask serving predictions
+- **Backend:** FastAPI
 - **Frontend:** Next.js
 - **Data handling:** Pillow, NumPy, scikit-learn (for the clustering experiment)
 
