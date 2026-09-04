@@ -1,6 +1,7 @@
 # A Platypus? Perry the Platypus???
 
 **Is that Perry, or just a platypus?**
+<img src="./assets/demo.gif" width="600" alt="Demo of PerryVision scanning a photo" />
 
 A fine-grained binary image classifier that does what Dr. Doofenshmirtz never could: readily tell apart _Perry the Platypus_ from an ordinary, non-secret-agent platypus. Upload a picture, get an instant verdict. Dr Doof will definitely appreciate this!
 
