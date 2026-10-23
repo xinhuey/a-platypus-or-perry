@@ -7,6 +7,9 @@ A fine-grained binary image classifier that does what Dr. Doofenshmirtz never co
 
 Built as a hands-on learning project to compare **supervised**, **unsupervised**, and **reinforcement learning** approaches to the exact same classification problem.
 
+## Demo
+https://github.com/user-attachments/assets/3c2eb2da-a37f-4e4b-ab2c-2b715674dfc0
+
 ## User Manual for Dr Doofenshmirtz
 
 1. **Upload** a picture of the suspect.
